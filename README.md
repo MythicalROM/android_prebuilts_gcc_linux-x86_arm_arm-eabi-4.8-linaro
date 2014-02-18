@@ -6,10 +6,10 @@ ________________________________________________________________________________
 
 This branch contains some of the latest cross compiler toolchains I've built for Android kernel development,
 it contains the following:
-- "Linaro GCC 4.8.3-2014.01 Toolchains" subfolder contains the toolchains that include Linaro GCC 4.8-2014.01 (4.8.3)
+- "Linaro GCC 4.8.3-2014.02 Toolchains" subfolder contains the toolchains that include Linaro GCC 4.8-2014.02 (4.8.3)
   and Linaro GDB 7.6.1-2013.10
 
-Note: The GCC 4.8 toolchains could cause incompatibility problems with some kernels
+Note: GCC 4.8 toolchains could cause incompatibility problems with some kernels
 
 
 You can find other zipped toolchain builds on my Mediafire folder, please take a look at the original thread on
@@ -32,11 +32,13 @@ Christopher
 
 
 These are the details on each toolchain currently available on this repo
+
+
 ___________________________________________________________________________________________________________
 
-                    TOOLCHAIN arm-cortex_a15-linux-gnueabihf-linaro_4.8.3-2014.01
+                    TOOLCHAIN arm-cortex_a15-linux-gnueabihf-linaro_4.8.3-2014.02
 
-- Built using latest Linaro Crosstool-NG toolchain builder (linaro-1.13.1+bzr2644)
+- Built using latest Linaro Crosstool-NG toolchain builder (linaro-1.13.1+bzr2646)
 - Cortex-A15 specific settings for target architecture and target optimizations:
     CT_ARCH_ARCH=""
     CT_ARCH_CPU="cortex-a15"
@@ -48,8 +50,8 @@ ________________________________________________________________________________
     CT_ARCH_ARM_MODE="arm"
     CT_ARCH_ARM_MODE_ARM=y
 
-- Linux Kernel 3.4.78
-- Linaro GCC 4.8-2014.01 (4.8.3)
+- Linux Kernel 3.4.80
+- Linaro GCC 4.8-2014.02 (4.8.3)
 - Linaro Binutils 2.24-2013.12
 - Linaro EGLibc 2.18-2013.10 prebuilt
 - Linaro GDB 7.6.1-2013.10
@@ -61,11 +63,12 @@ ________________________________________________________________________________
 - Hard float with soft float support
 - Multilib support
 - Alias "arm-gnueabi-"
+
 ___________________________________________________________________________________________________________
 
-                    TOOLCHAIN arm-cortex_a9-linux-gnueabihf-linaro_4.8.3-2014.01
+                    TOOLCHAIN arm-cortex_a9-linux-gnueabihf-linaro_4.8.3-2014.02
 
-- Built using latest Linaro Crosstool-NG toolchain builder (linaro-1.13.1+bzr2644)
+- Built using latest Linaro Crosstool-NG toolchain builder (linaro-1.13.1+bzr2646)
 - Cortex-A9 specific settings for target architecture and target optimizations:
     CT_ARCH_ARCH="armv7-a"
     CT_ARCH_CPU="cortex-a9"
@@ -77,8 +80,8 @@ ________________________________________________________________________________
     CT_ARCH_ARM_MODE="arm"
     CT_ARCH_ARM_MODE_ARM=y
 
-- Linux Kernel 3.4.78
-- Linaro GCC 4.8-2014.01 (4.8.3)
+- Linux Kernel 3.4.80
+- Linaro GCC 4.8-2014.02 (4.8.3)
 - Linaro Binutils 2.24-2013.12
 - Linaro EGLibc 2.18-2013.10 prebuilt
 - Linaro GDB 7.6.1-2013.10
@@ -90,11 +93,12 @@ ________________________________________________________________________________
 - Hard float with soft float support
 - Multilib support
 - Alias "arm-gnueabi-"
+
 ___________________________________________________________________________________________________________
 
-                    TOOLCHAIN arm-cortex_a8-linux-gnueabi-linaro_4.8.3-2014.01
+                    TOOLCHAIN arm-cortex_a8-linux-gnueabi-linaro_4.8.3-2014.02
 
-- Built using latest Linaro Crosstool-NG toolchain builder (linaro-1.13.1+bzr2644)
+- Built using latest Linaro Crosstool-NG toolchain builder (linaro-1.13.1+bzr2646)
 - Cortex-A8 specific settings for target architecture and target optimizations:
     CT_ARCH_ARCH="armv7-a"
     CT_ARCH_CPU="cortex-a8"
@@ -106,22 +110,24 @@ ________________________________________________________________________________
     CT_ARCH_ARM_MODE_ARM=y
 
 - Linux Kernel 3.0.101
-- Linaro GCC 4.8-2014.01 (4.8.3)
+- Linaro GCC 4.8-2014.02 (4.8.3)
 - Linaro Binutils 2.24-2013.12
-- Linaro EGLibc 2.18-2013.10
+- Linaro EGLibc 2.18-2013.10 prebuilt
 - Linaro GDB 7.6.1-2013.10
 - GMP 5.1.1
 - MPFR 3.1.2
 - ISL 0.11.1
 - CLOOG 0.18.0
 - MPC 1.0.1
+- Softfp
 - Multilib support
 - Alias "arm-gnueabi-"
+
 ___________________________________________________________________________________________________________
 
-                      TOOLCHAIN arm-linux-gnueabi-linaro_4.8.3-2014.01
+                      TOOLCHAIN arm-linux-gnueabi-linaro_4.8.3-2014.02
 
-- Built using latest Linaro Crosstool-NG toolchain builder (linaro-1.13.1+bzr2644)
+- Built using latest Linaro Crosstool-NG toolchain builder (linaro-1.13.1+bzr2646)
 - Generic ARM settings (inspired by latest Linaro builds) for target architecture and target optimizations:
     CT_ARCH_ARCH="armv7-a"
     CT_ARCH_CPU=""
@@ -133,14 +139,15 @@ ________________________________________________________________________________
     CT_ARCH_ARM_MODE_THUMB=y
 
 - Linux Kernel 3.0.101
-- Linaro GCC 4.8-2014.01 (4.8.3)
+- Linaro GCC 4.8-2014.02 (4.8.3)
 - Linaro Binutils 2.24-2013.12
-- Linaro EGLibc 2.18-2013.10
+- Linaro EGLibc 2.18-2013.10 prebuilt
 - Linaro GDB 7.6.1-2013.10
 - GMP 5.1.1
 - MPFR 3.1.2
 - ISL 0.11.1
 - CLOOG 0.18.0
 - MPC 1.0.1
+- Softfp
 - Multilib support
 - Alias "arm-gnueabi-"
